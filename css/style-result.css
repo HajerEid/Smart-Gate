@@ -1,0 +1,100 @@
+body{
+    background-image: linear-gradient(to bottom, #FFFFFF 100%, #F8F8F8 50%);
+}
+#id{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#id .info img{
+    width: 100px;
+    height: 80px;
+}
+ #id .info .text .t{
+    margin-bottom: 5px;
+}
+#id .info .text p{
+    color: #979797;
+}
+#id .btn-primary{
+    background-color: #3485B9;
+}
+#id #bottoms .btn{
+height:max-content ;
+}
+
+
+.content{
+    margin: 70px auto;
+}
+.content .top h2{
+    font-size: 24px;
+}
+.content  h2 ,h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.content  .container{
+    margin: 20px;
+}
+.content .top .table td,
+.content .top .table th,
+.content table thead th,
+.content .bottom tr:last-child td
+{
+    border-bottom: none;
+}
+.bottom .custom-table {
+    border-spacing: 0 15px;
+    border-collapse: separate;
+    border-radius: 20px;
+}
+
+.bottom .custom-table thead tr th {
+    padding-bottom: 15px;
+}
+
+.bottoms .btn-group #total-btn {
+    border-radius: 0 10px 10px 0;
+}
+
+.bottoms .btn-group #percent-btn {
+    border-radius: 10px 0 0 10px;
+}
+
+
+/*responsive mobile screen */
+@media (max-width: 768px) {
+    #id {
+    flex-direction: column; 
+    }
+    #bottoms {
+        margin-top: 20px;
+            display: flex !important;
+            justify-content: center;
+         }
+     .top , .bottom{
+        margin: 10px;
+    }
+    .container {
+        display: inline;
+    
+    }
+
+    .content .bottoms{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    }
+    .btn-group ,.btn {
+        width: fit-content;
+        height: fit-content;
+
+    }
+    .bottoms .btn-primary{
+      margin-right: 50px;
+    }
+         
+}

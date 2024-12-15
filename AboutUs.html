@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links-->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style-Home.css">
+    <link rel="stylesheet" href="./css/style-about.css">
+
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/png">
+    <link href="./assets/fontawesome-free-6.7.1-web/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Emilys+Candy&family=Faculty+Glyphic&family=Figtree:ital,wght@0,300..900;1,300..900&family=Galdeano&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kirang+Haerang&family=Outfit:wght@100..900&family=Pacifico&family=Rock+Salt&family=Ruge+Boogie&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Twinkle+Star&family=Young+Serif&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+
+
+    <title>Smart Gate | About Us</title>
+</head>
+<body>
+<header>
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg ">
+
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.png" alt="icon" width="50" height="50">
+            </a>
+            <!-- menu bar -->
+            <button class="btn navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                <span class="fa-solid fa-bars"></span>
+            </button>
+            <!-- offcanvas menu -->
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                aria-labelledby="staticBackdropLabel">
+
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                    </button>
+                </div>
+
+
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" id="action" href="index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#lastNews">الأخبار</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ourServices">خدماتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Sectors">قطاعاتنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Seminars">الندوات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="AboutUs.html">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ContactUs">اتصل بنا</a></li>
+                </ul>
+            
+                <div class="sign-in">
+                    <!-- Button to trigger the first modal -->
+                    <button class="btn btn-warning ms-2" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">تسجيل
+                        دخول</button>
+                
+                
+                    <!-- First Modal -->
+                    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="right">
+                                        <h2> تسجيل الدخول </h2>
+                                        <p>من فضلك قم بإدخال البيانات المطلوبة منك لإستكمال تسجيل الدخول.</p>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" id="national-num" placeholder=" الرقم القومي ">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control" id="id-num" placeholder=" الرقم الجامعي ">
+                                        </div>
+                                        <!-- Button to trigger the second modal -->
+                                        <button id="openCollegeModal" class="btn btn-warning">تسجيل الآن</button>
+                                    </div>
+                                    <!-- Left Div -->
+                                    <div class="left col-6 ps-3 text-center">
+                                        <img class="img-fluid" src="./assets/images/sign-in.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Second Modal -->
+                    <div class="modal fade" id="collegeModal" tabindex="-1" aria-labelledby="collegeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="right">
+                                        <h2> اختر الكلية </h2>
+                                        <div class="mb-3 colg">
+                                            <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                                                <option selected>اختر الكلية</option>
+                                                <option value="1">كلية 1</option>
+                                                <option value="2">كلية 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 colg">
+                                            <select class="form-select form-select-sm" aria-label="Small select example">
+                                                <option selected>اختر القسم - التخصص</option>
+                                                <option value="1">قسم 1</option>
+                                                <option value="2">قسم 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3 colg">
+                                            <input type="text" class="form-control" placeholder="رقم الجلوس">
+                                        </div>
+                                        <a href="Result.html" class="btn btn-warning">المتابعة</a>
+                                    </div>
+                                    <!-- Left Div -->
+                                    <div class="left col-6 ps-3 text-center">
+                                        <img class="img-fluid" src="./assets/images/sign-in.png" alt="">
+                                    </div>
+                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <button class="btn btn-outline-primary" type="button">عضو جديد</button>
+                
+                </div>
+            
+            
+            </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <div id="hero">
+        <div class="curly--blue style"></div>
+        <div class="curly--orang style"></div>
+
+        <div class=" top container row  ">
+        <div class="right  col-4">
+            <img src="./assets/images/headerimg-about.png" alt="">
+        </div>
+
+        <div class="left  col">
+            <h1 class="title">SMART <span>GATE</span></h1>
+            <p>
+                تعد شركة سمارت جيت من الشركات الرائدة في صناعة الأفكار الإبداعية والمبتكرة لعملاها حيث تمنح فرصاً فريدة للعملاء للحصول
+                علي حلول متكاملة من مصدر واحد وذلك بتطبيق حلول تقنية متكاملة وبطريقة تهدف لزيادة وسرعة الانتاجية والربحية وبالمشاركة مع
+                شركتنا تصبح الفرصه مواتيه للفوز بعمق التجربة والحلول التقنية الأبعد بكثير من الخبرة المحلية لخدماتنا التي تتضمن تصميم
+                وتطبيق الشبكات السلكية واللاسلكية وتجهيز الاجهزة ومستلزماتها وملحقاتها لكل الاصناف المعروفة والمتناسقة اللازمة لتطوير
+                البرامج والحلول المتكاملة والاستشارات التقنية والمعلوماتية وتصميم المواقع والبرمجيات والتدريب والصيانة وادارة النظم بشكل
+                عام
+            </p>
+        </div>
+</div>
+        
+    </div>
+
+</header>
+<section id="info">
+
+    <div class="container row  ">
+
+        <div class="right  col ">
+            <div class="item vision grid gap-2">
+                <img  class="p-2 g-col-6"  src="./assets/images/view.png" alt="">
+                <h3 class="p-2 g-col-6" >رؤية الشركة</h3>
+                <p class="p-2 g-col-6" >الأفكار المبدعه والمبتكرة هي طريقنا لبناء علاقتنا مع العميل كفريق عمل واحد بداية من العمل سوياً ثم التشغيل والإدارة نعمل
+                معا ننجح معا - وذلك عن طريق تقديم المنتجات والخدمات ذات الجوده العالية في مجال تكنولوجيا المعلومات لتطوير البرامج
+                والبنية التحتية اللازمة من أجهزة وشبكات وبرمجيات لتطوير الأداء لدي العملاء</p>
+            </div>
+            <div class="item goal grid gap-2">
+                <img class="p-2 g-col-6"  src="./assets/images/goal.png" alt="">
+                <h3 class="p-2 g-col-6" >مهمة الشركة</h3>
+                <p class="p-2 g-col-6" >مهمتنا المشاركة مع عملائنا لنجعلهم أكثر تنافسية وكفاءه وأكثر فاعلية والمساهمه في استقرارهم بمواقعهم بالسوق والسعى للتقدم
+                والنمو فى مجالات أعمالهم</p>
+            </div>
+        </div>
+
+        <div class="left  col ">
+            <img src="./assets/images/about.png" alt="">
+        </div>
+
+    </div>
+    <div class="curly-blue style"></div>
+</section>
+
+<section id="teem">
+    <div class="caption">
+        <h2> فريقنا </h2>
+        <p>نحن نهتم بالشباب اكثر ما نهتم بالخبرة لذلك فان فريقنا هو مجموعة من الشباب المبدعين والطموحيين</p>
+    </div>
+    <div class="imgContainer container row">
+
+        <div class="card col" style="width: 18rem;">
+            <div class="i1">
+                <img src="./assets/images/person 1.jpg"  width="100%"  alt="...">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title"> رجب علي </h3>
+                <p class="card-text">المدير العام</p>
+            </div>
+        </div>
+
+        <div class="card col" style="width: 18rem;">
+            <div class="i2">
+                <img src="./assets/images/person 2.jpg" width="100%"  alt="...">
+            </div>
+            <div class="card-body">
+                <h3 class="card-title"> أحمد مدحت </h3>
+                <p class="card-text"> المدير التنفيذي </p>
+            </div>
+        </div>
+        <div class="card col" style="width: 18rem;">
+            <div class="i3">
+                <img src="./assets/images/person 3.jpg" width="100%"  alt="...">
+            </div>
+
+            <div class="card-body">
+                <h3 class="card-title"> خالد السعيد </h3>
+                <p class="card-text"> المساعد التنفيذي </p>
+            </div>
+        </div>
+        <div class="card col" style="width: 18rem;">
+            <div class="i4">
+                <img src="./assets/images/person 4.jpg" width="100%" alt="...">
+            </div>
+
+            <div class="card-body">
+                <h3 class="card-title"> سالم أحمد </h3>
+                <p class="card-text"> مسؤول التسويق </p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div class="blank"></div>
+
+<section id="about">
+<div class="section location">
+    <img src="./assets/images/logo.png" alt="">
+    <p><i class="fa-solid fa-location-dot"></i> عقار رقم 9 شارع حسن افلاطون ارض الجولف – مدينة نصر </p>
+</div>
+<div class="section bar">
+    <ul>
+        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link" href="#lastNews">الأخبار</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ourServices">خدماتنا</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Sectors">قطاعاتنا</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Seminars">الندوات</a></li>
+        <li class="nav-item"><a class="nav-link" href="AboutUs.html">من نحن</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ContactUs">اتصل بنا</a></li>
+    </ul>
+</div>
+<div class="section content">
+    <ul>
+        <li> تواصل معنا عبر </li>
+        <li><i class="fa-solid fa-mobile-screen"></i> 01069673344 </li>
+        <li><i class="fa-solid fa-phone"></i> 0224199056 </li>
+        <li><i class="fa-solid fa-envelope"></i> info@smart-gate.net </li>
+    </ul>
+</div>
+<div class="section follow">
+    <p>تابعنا عبر</p>
+    <ul>
+        <li><i class="fa-brands fa-youtube"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-facebook-f"></i></li>
+    </ul>
+    <div class="input-group mb-3" id="subs">
+        <input type="text" id="email-in" class=" form-control" placeholder=" بريدك الإلكتروني "
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button class=" btn btn-warning" id="btn-sub" type="button " id="button-addon2">اشترك الان </button>
+    </div>
+
+</div>
+</section>
+
+<footer>
+    <p> SMART GATE 2021 © جميع الحقوق محفوظة لدى </p>
+</footer>
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
